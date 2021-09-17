@@ -25,6 +25,7 @@ jobs:
         with:
           token: ${{ secrets.USER_PAT }}
           external-repository: danielsd89/poc-actions
+          repository: DanielSD89/local-workflow-dispatch-action 
           ref: temp
           workflow: remote-nested-workflow.yml
           inputs: "{\"name\":\"Santander Remote Command Line User\", \"home\":\"CLI\" }"
