@@ -79,6 +79,7 @@ runs:
     - uses: the-iron-bank-of-braavos/workflow-dispatch-action@main
       with:
         token: ${{ inputs.token }}
+        repository: ${{ inputs.repository }}
         ref: ${{ inputs.temp-ref }}
         workflow: ${{ inputs.workflow }}
         inputs: ${{ inputs.inputs }}
