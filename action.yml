@@ -82,9 +82,9 @@ runs:
         ref: ${{ inputs.temp-ref }}
         workflow: ${{ inputs.workflow }}
         inputs: ${{ inputs.inputs }}
-   
-    - if: ${{ always() }} 
-      run: |
+    
+    - run: |
+        if: ${{ always() }} 
         sleep 5
         git push -d origin ${{ inputs.temp-ref }}
       shell: bash
