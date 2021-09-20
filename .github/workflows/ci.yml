@@ -23,7 +23,7 @@ jobs:
         uses: ./
         with:
           token: ${{ secrets.USER_PAT }}
-          external-repository: the-iron-bank-of-braavos/poc-actions
+          external-repository: the-iron-bank-of-braavos/local-workflow-dispatch-action
           ref: tmp
-          workflow: remote-nested-workflow.yml
+          workflow: nested-workflow.yml
           inputs: "{\"name\":\"Santander Remote Command Line User\", \"home\":\"CLI\" }"
